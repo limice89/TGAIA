@@ -1,0 +1,32 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+target 'TGAIAWiFi' do
+  pod 'MJRefresh'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'YYKit'
+  pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'Masonry'
+  pod 'DZNEmptyDataSet'
+  pod 'YTKKeyValueStore'
+  pod 'JPush' # 极光推送
+  pod 'UMCCommon' # 友盟基础库
+  # U-Share SDK UI模块（分享面板，建议添加）
+  pod 'UMCShare/UI'
+  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'UMCShare/Social/QQ'
+  pod 'UMCShare/Social/Sina'
+  pod 'SDWebImage', '~>3.8'
+  pod 'SDWebImage/WebP'
+  pod 'IQKeyboardManager'
+  pod 'JXCategoryView'
+  pod 'TZImagePickerController'
+  pod 'LMForm'
+  pod 'WMZDialog'
+  pod 'BaiduMapKit', '~>4.1.0' #百度地图SDK
+#  pod 'BMKLocationKit'
+  pod 'ReactiveObjC'
+  pod 'AlipaySDK-iOS'  #支付宝支付
+  pod 'WechatOpenSDK'   #微信支付
+  
+end
+

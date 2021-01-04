@@ -1,0 +1,273 @@
+//
+//  JinZhiTong-prefix.pch
+//  JinZhiTong
+//
+//  Created by admin on 2020/1/30.
+//  Copyright © 2020 limice. All rights reserved.
+//
+
+#ifndef JinZhiTong_prefix_pch
+#define JinZhiTong_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* JinZhiTong_prefix_pch */
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <UMShare/UMShare.h>
+// 引入 JPush 功能所需头文件
+#import "JPUSHService.h"
+// iOS10 注册 APNs 所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// 如果需要使用 idfa 功能所需要引入的头文件（可选）
+#import <AdSupport/AdSupport.h>
+//全局宏
+#import "UtilsMacros.h"
+#import "URLMacros.h"
+#import "FontAndColorMacros.h"
+#import "ThirdMacros.h"
+#import "CommonMacros.h"
+
+//基础类
+#import "AppDelegate.h"
+#import "AppDelegate+AppService.h"
+#import "RootViewController.h"
+#import "RootNavigationController.h"
+#import "XLWebViewController.h"
+#import "MBProgressHUD+XY.h"
+#import "PPNetworkHelper.h"
+#import "AppManager.h"
+#import "ShareManager.h"
+#import "UserManager.h"
+#import "IMManager.h"
+#import "UIButton+XYButton.h"
+#import "UIButton+btnExt.h"
+#import "UILabel+labelExt.h"
+#import "UIImage+YMImage.h"
+#import "UIView+Extension.h"
+#import "UIView+AZGradient.h"
+#import "UIView+Toast.h"
+#import "UIScrollView+YMRefresh.h"
+#import "UIScrollView+YMEmptyDataSet.h"
+#import "UIBarButtonItem+IECCreate.h"
+#import "NSString+PinYin.h"
+#import "NSString+Verity.h"
+#import "NSString+FontSize.h"
+#import "NSString+SimpleModifier.h"
+#import "NSObject+IECExtention.h"
+#import "NSDate+KIAdditions.h"
+#import "MBProgressHUD+XY.h"
+#import "APPLanguageManager.h"
+#import "Constants.h"
+#import "IECWebViewController.h"
+#import "BaseModel.h"
+
+//#import "BFCBDMapPoiModel.h"
+#import "PayManager.h"
+#import "MKLFlowLayout.h"
+
+#import "YMSampleRequest.h"
+#import "JXTAlertController.h"
+
+#import "YMSeverTimeManager.h" //服务器时间管理
+#import "AuthorizeManager.h"
+
+//第三方
+#import <YYKit.h>
+#import <MBProgressHUD.h>
+#import <Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "WMZDialog.h"
+#import "LMFormCellProtocol.h"
+#import "SDCycleScrollView.h"
+#import "JXCategoryView.h"
+#import "LMForm.h"
+#import "STModal.h"
+#import "STAlertView.h"
+#import "BRPickerView.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+#import <BaiduMapAPI_Map/BMKMapView.h>
+//#import <BMKLocationKit/BMKLocationComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+#import "TZImagePickerController.h"
+#import "CQToast.h"
+#import "JXTAlertController.h"
+
+
+#import "Masonry.h"
+#import "IQKeyboardManager.h"
+#import "ReactiveObjC.h"
+#import "YMUMengHelper.h"
+#import "NSObject+Extension.h"
+
+
+
+
+
+
+//#import "MLeaksFinder.h"
+
+
+
+
+#endif
+
+#define LBHasSafeArea @available(iOS 11.0, *)
+
+#define Common_Bg_Color [UIColor colorWithRed:25.0 / 255.0 green:26.0 / 255.0 blue:27.0 / 255.0 alpha:1.0]
+
+#define Common_Bg_Color_Dark [UIColor colorWithRed:22.0 / 255.0 green:23.0 / 255.0 blue:24.0 / 255.0 alpha:1.0]
+
+#define Rc_Bg_Color [UIColor colorWithRed:45.0 / 255.0 green:46.0 / 255.0 blue:47.0 / 255.0 alpha:1.0]
+
+#define ActionSheet_Bg_Color [UIColor colorWithRed:144 / 255.0 green:144 / 255.0 blue:144 / 255.0 alpha:1.0]
+
+#define Common_Primary_Color [UIColor colorWithRed:240 / 105 green:141 / 256.0 blue:80 / 256.0 alpha:1]
+#define VideoTrialTime 360 //试看时间，单位秒
+#define DLNA_Search_Timeout 10 //设备搜索超时时间
+
+#define Serial_Btn_Size 32 //剧集按钮大小
+//测试地址
+#define kBaseUrlStr_Test @"https:"
+
+
+//版本号
+#define kVersion_Coding [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define kVersionBuild_Coding [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+
+//常用变量
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define kHigher_iOS_6_1 (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+#define kHigher_iOS_6_1_DIS(_X_) ([[NSNumber numberWithBool:kHigher_iOS_6_1] intValue] * _X_)
+#define kNotHigher_iOS_6_1_DIS(_X_) (-([[NSNumber numberWithBool:kHigher_iOS_6_1] intValue]-1) * _X_)
+
+#define kDevice_Is_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+#define kDevice_Is_iPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+#define KDeviceBottomHeight (kDevice_Is_iPhoneX&&IS_IPHONE)?34:0
+
+#define IECLocalized(key) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"]
+
+#define NSSTRING_CHECK_ISNULL(txt) (txt == nil || [txt isKindOfClass:[NSNull class]] || [((NSString *)txt) isEqualToString:@"(null)"] || [((NSString *)txt) isEqualToString:@"<null>"] || [((NSString *)txt) isEqualToString:@"<nil>"]) ? @"" : (NSString *)txt
+
+#define kSafeArea_Top (kDevice_Is_iPhoneX? 44: 20)
+#define kSafeArea_Bottom (kDevice_Is_iPhoneX? 34: 0)
+#define kLine_MinHeight (1.0/ [UIScreen mainScreen].scale)
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kPaddingLeftWidth 15.0
+#define kLoginPaddingLeftWidth 18.0
+#define kMySegmentControl_Height 44.0
+#define kMySegmentControlIcon_Height 70.0
+
+#define  kBackButtonFontSize 16
+#define  kNavTitleFontSize 18
+
+#define MSWeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+#define kScaleFrom_iPhone6_Desgin(_X_) (_X_ * (kScreen_Width/375))
+#define ESWeak(var, weakVar) __weak __typeof(&*var) weakVar = var
+#define ESStrong_DoNotCheckNil(weakVar, _var) __typeof(&*weakVar) _var = weakVar
+#define ESStrong(weakVar, _var) ESStrong_DoNotCheckNil(weakVar, _var); if (!_var) return;
+
+//#define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };
+#define WEAK  @weakify(self);
+#define STRONG  @strongify(self);
+#define ESWeak_(var) ESWeak(var, weak_##var);
+#define ESStrong_(var) ESStrong(weak_##var, _##var);
+
+/** defines a weak `self` named `__weakSelf` */
+#define ESWeakSelf      ESWeak(self, __weakSelf);
+/** defines a strong `self` named `_self` from `__weakSelf` */
+#define ESStrongSelf    ESStrong(__weakSelf, _self);
+
+#define kColorTableBG [UIColor colorWithHexString:@"0xFFFFFF"]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xF2F4F6"]
+#define kColor333 [UIColor colorWithHexString:@"0x333333"]
+#define kColor666 [UIColor colorWithHexString:@"0x666666"]
+#define kColor999 [UIColor colorWithHexString:@"0x999999"]
+#define kColorCCC [UIColor colorWithHexString:@"0xCCCCCC"]
+#define kColorBGRed [UIColor colorWithHexString:@"0xF06950"]
+#define kColorBGLightRed [UIColor colorWithHexString:@"0xF9C3B9"]
+//scrollview ios11适配
+#define  adjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+[scrollView   performSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:") withObject:@(2)];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#define LBHasSafeArea @available(iOS 11.0, *)
+#define VideoURL_Level1080 [NSURL URLWithString:@"https://video-cdn.fe.huoyanvideo.com/video/TRANS0001/vid20200826175711jzx9ac/vid20200826175711jzx9ac.m3u8"]
+
+#define VideoURL_Level720 [NSURL URLWithString:@"https://video-cdn.fe.huoyanvideo.com/video/TRANS0001/vid20200826175711jzx9ac/vid20200826175711jzx9ac.m3u8"]
+
+#define VideoURL_Level540 [NSURL URLWithString:@"https://video-cdn.fe.huoyanvideo.com/video/TRANS0001/vid20200826175711jzx9ac/vid20200826175711jzx9ac.m3u8"]
+
+#define VideoURL_Level320 [NSURL URLWithString:@"https://video-cdn.fe.huoyanvideo.com/video/TRANS0001/vid20200826175711jzx9ac/vid20200826175711jzx9ac.m3u8"]
+
+#define VideoURL_None [NSURL URLWithString:@""]
+
+#define Common_Bg_Color [UIColor colorWithRed:25.0 / 255.0 green:26.0 / 255.0 blue:27.0 / 255.0 alpha:1.0]
+
+#define Common_Bg_Color_Dark [UIColor colorWithRed:22.0 / 255.0 green:23.0 / 255.0 blue:24.0 / 255.0 alpha:1.0]
+
+#define Rc_Bg_Color [UIColor colorWithRed:45.0 / 255.0 green:46.0 / 255.0 blue:47.0 / 255.0 alpha:1.0]
+
+#define ActionSheet_Bg_Color [UIColor colorWithRed:144 / 255.0 green:144 / 255.0 blue:144 / 255.0 alpha:1.0]
+
+#define Common_Primary_Color [UIColor colorWithRed:240 / 105 green:141 / 256.0 blue:80 / 256.0 alpha:1]
+
+
+#ifdef DEBUG
+
+#define NSLogFunc NSLog(@"=====Begin==========\n FILE: %@\n FUNC: %s\n LINE: %d\n", [NSString stringWithUTF8String:__FILE__].lastPathComponent, __PRETTY_FUNCTION__, __LINE__)
+
+#else
+
+#define NSLogFunc
+
+#endif
+
+//#pragma mark New Color
+//#define kColorDark2 [UIColor colorWithHexString:@"0x272C33"]
+//#define kColorDark3 [UIColor colorWithHexString:@"0x323A45"]
+//#define kColorDark4 [UIColor colorWithHexString:@"0x425063"]
+//#define kColorDark7 [UIColor colorWithHexString:@"0x76808E"]
+//#define kColorDarkA [UIColor colorWithHexString:@"0xA9B3BE"]
+//#define kColorDarkD [UIColor colorWithHexString:@"0xD8DDE4"]
+//#define kColorDarkF [UIColor colorWithHexString:@"0xF2F4F6"]
+//#define kColorWhite [UIColor colorWithHexString:@"0xFFFFFF"]
+//#define kColorActionGreen [UIColor colorWithHexString:@"0x2EBE76"]
+//#define kColorActionBlue [UIColor colorWithHexString:@"0x0060FF"]
+//#define kColorActionRed [UIColor colorWithHexString:@"0xF56061"]
+//#define kColorActionYellow [UIColor colorWithHexString:@"0xF3C033"]
