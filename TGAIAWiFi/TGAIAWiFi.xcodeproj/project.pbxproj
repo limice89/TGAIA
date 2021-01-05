@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -171,6 +171,27 @@
 		845A91D525A2AB300008B5E1 /* GHDropMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A913025A2AB2F0008B5E1 /* GHDropMenuModel.m */; };
 		845A91D625A2AB300008B5E1 /* GHDropMenuFilterSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A913225A2AB2F0008B5E1 /* GHDropMenuFilterSectionHeader.m */; };
 		845A91D725A2AB300008B5E1 /* GHCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A913525A2AB2F0008B5E1 /* GHCustomAlertView.m */; };
+		845A921325A2BB540008B5E1 /* TGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A921125A2BB540008B5E1 /* TGLoginViewController.m */; };
+		845A921425A2BB540008B5E1 /* TGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A921225A2BB540008B5E1 /* TGLoginViewController.xib */; };
+		845A921B25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A921925A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.m */; };
+		845A921C25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A921A25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.xib */; };
+		845A922425A2E2190008B5E1 /* TGEditPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A922225A2E2190008B5E1 /* TGEditPasswordViewController.m */; };
+		845A922525A2E2190008B5E1 /* TGEditPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A922325A2E2190008B5E1 /* TGEditPasswordViewController.xib */; };
+		845A927125A2F8840008B5E1 /* NormalNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A926825A2F8840008B5E1 /* NormalNavView.m */; };
+		845A927225A2F8840008B5E1 /* UIView+GoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A926C25A2F8840008B5E1 /* UIView+GoAdd.m */; };
+		845A927325A2F8840008B5E1 /* DynamicBigTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A926E25A2F8840008B5E1 /* DynamicBigTitleView.m */; };
+		845A927425A2F8840008B5E1 /* UIViewController+DynamicBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A926F25A2F8840008B5E1 /* UIViewController+DynamicBar.m */; };
+		845A927525A2F8840008B5E1 /* DynamicNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A927025A2F8840008B5E1 /* DynamicNavView.m */; };
+		845A927B25A30E2C0008B5E1 /* TGResetAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A927A25A30E2C0008B5E1 /* TGResetAlertView.m */; };
+		845A927E25A30E390008B5E1 /* TGResetAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A927D25A30E390008B5E1 /* TGResetAlertView.xib */; };
+		845A928325A313E80008B5E1 /* TGContactServiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A928225A313E80008B5E1 /* TGContactServiceAlertView.m */; };
+		845A928625A313F40008B5E1 /* TGContactServiceAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A928525A313F40008B5E1 /* TGContactServiceAlertView.xib */; };
+		845A928E25A318870008B5E1 /* TGDeviceManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A928C25A318870008B5E1 /* TGDeviceManagerViewController.m */; };
+		845A928F25A318870008B5E1 /* TGDeviceManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A928D25A318870008B5E1 /* TGDeviceManagerViewController.xib */; };
+		845A929625A318BB0008B5E1 /* TGVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A929425A318BB0008B5E1 /* TGVersionViewController.m */; };
+		845A929725A318BB0008B5E1 /* TGVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A929525A318BB0008B5E1 /* TGVersionViewController.xib */; };
+		845A929D25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A929A25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.m */; };
+		845A929E25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A929B25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.xib */; };
 		F5F056D7B008090E8C301963 /* libPods-TGAIAWiFi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 583676DCB51D4377790E1FEC /* libPods-TGAIAWiFi.a */; };
 /* End PBXBuildFile section */
 
@@ -511,6 +532,40 @@
 		845A913525A2AB2F0008B5E1 /* GHCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCustomAlertView.m; sourceTree = "<group>"; };
 		845A913625A2AB2F0008B5E1 /* GHDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDropMenu.h; sourceTree = "<group>"; };
 		845A91DA25A2AB640008B5E1 /* TGAIA-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGAIA-prefix.pch"; sourceTree = "<group>"; };
+		845A921025A2BB540008B5E1 /* TGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLoginViewController.h; sourceTree = "<group>"; };
+		845A921125A2BB540008B5E1 /* TGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLoginViewController.m; sourceTree = "<group>"; };
+		845A921225A2BB540008B5E1 /* TGLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGLoginViewController.xib; sourceTree = "<group>"; };
+		845A921825A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGEditPwdInputMobileViewController.h; sourceTree = "<group>"; };
+		845A921925A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGEditPwdInputMobileViewController.m; sourceTree = "<group>"; };
+		845A921A25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGEditPwdInputMobileViewController.xib; sourceTree = "<group>"; };
+		845A922125A2E2190008B5E1 /* TGEditPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGEditPasswordViewController.h; sourceTree = "<group>"; };
+		845A922225A2E2190008B5E1 /* TGEditPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGEditPasswordViewController.m; sourceTree = "<group>"; };
+		845A922325A2E2190008B5E1 /* TGEditPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGEditPasswordViewController.xib; sourceTree = "<group>"; };
+		845A926625A2F8840008B5E1 /* UIViewController+DynamicBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DynamicBar.h"; sourceTree = "<group>"; };
+		845A926725A2F8840008B5E1 /* DynamicBigTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBigTitleView.h; sourceTree = "<group>"; };
+		845A926825A2F8840008B5E1 /* NormalNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalNavView.m; sourceTree = "<group>"; };
+		845A926925A2F8840008B5E1 /* DynamicNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavView.h; sourceTree = "<group>"; };
+		845A926B25A2F8840008B5E1 /* UIView+GoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GoAdd.h"; sourceTree = "<group>"; };
+		845A926C25A2F8840008B5E1 /* UIView+GoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GoAdd.m"; sourceTree = "<group>"; };
+		845A926D25A2F8840008B5E1 /* NormalNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalNavView.h; sourceTree = "<group>"; };
+		845A926E25A2F8840008B5E1 /* DynamicBigTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicBigTitleView.m; sourceTree = "<group>"; };
+		845A926F25A2F8840008B5E1 /* UIViewController+DynamicBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DynamicBar.m"; sourceTree = "<group>"; };
+		845A927025A2F8840008B5E1 /* DynamicNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavView.m; sourceTree = "<group>"; };
+		845A927925A30E2C0008B5E1 /* TGResetAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGResetAlertView.h; sourceTree = "<group>"; };
+		845A927A25A30E2C0008B5E1 /* TGResetAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGResetAlertView.m; sourceTree = "<group>"; };
+		845A927D25A30E390008B5E1 /* TGResetAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGResetAlertView.xib; sourceTree = "<group>"; };
+		845A928125A313E80008B5E1 /* TGContactServiceAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGContactServiceAlertView.h; sourceTree = "<group>"; };
+		845A928225A313E80008B5E1 /* TGContactServiceAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGContactServiceAlertView.m; sourceTree = "<group>"; };
+		845A928525A313F40008B5E1 /* TGContactServiceAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGContactServiceAlertView.xib; sourceTree = "<group>"; };
+		845A928B25A318870008B5E1 /* TGDeviceManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGDeviceManagerViewController.h; sourceTree = "<group>"; };
+		845A928C25A318870008B5E1 /* TGDeviceManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGDeviceManagerViewController.m; sourceTree = "<group>"; };
+		845A928D25A318870008B5E1 /* TGDeviceManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGDeviceManagerViewController.xib; sourceTree = "<group>"; };
+		845A929325A318BB0008B5E1 /* TGVersionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGVersionViewController.h; sourceTree = "<group>"; };
+		845A929425A318BB0008B5E1 /* TGVersionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGVersionViewController.m; sourceTree = "<group>"; };
+		845A929525A318BB0008B5E1 /* TGVersionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGVersionViewController.xib; sourceTree = "<group>"; };
+		845A929A25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGDeviceEditPasswordViewController.m; sourceTree = "<group>"; };
+		845A929B25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGDeviceEditPasswordViewController.xib; sourceTree = "<group>"; };
+		845A929C25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGDeviceEditPasswordViewController.h; sourceTree = "<group>"; };
 		A77C08789F10E21DAE909A03 /* Pods-TGAIAWiFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGAIAWiFi.debug.xcconfig"; path = "Target Support Files/Pods-TGAIAWiFi/Pods-TGAIAWiFi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -555,6 +610,7 @@
 		845A8F8125A2AA0B0008B5E1 /* TGAIAWiFi */ = {
 			isa = PBXGroup;
 			children = (
+				845A920E25A2B9800008B5E1 /* Models */,
 				845A8FBE25A2AB2A0008B5E1 /* AppDelegate */,
 				845A8FE625A2AB2B0008B5E1 /* Base */,
 				845A8FB825A2AB2A0008B5E1 /* Define */,
@@ -586,10 +642,10 @@
 			isa = PBXGroup;
 			children = (
 				845A8FBF25A2AB2A0008B5E1 /* AppDelegate.h */,
-				845A8FC025A2AB2A0008B5E1 /* AppDelegate+AppService.h */,
-				845A8FC125A2AB2A0008B5E1 /* AppDelegate+PushService.h */,
 				845A8FC225A2AB2A0008B5E1 /* AppDelegate.m */,
+				845A8FC025A2AB2A0008B5E1 /* AppDelegate+AppService.h */,
 				845A8FC325A2AB2A0008B5E1 /* AppDelegate+AppService.m */,
+				845A8FC125A2AB2A0008B5E1 /* AppDelegate+PushService.h */,
 				845A8FC425A2AB2A0008B5E1 /* AppDelegate+PushService.m */,
 			);
 			path = AppDelegate;
@@ -748,6 +804,7 @@
 		845A901725A2AB2C0008B5E1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				845A926525A2F8840008B5E1 /* DynamicNav */,
 				845A901825A2AB2C0008B5E1 /* STModal */,
 				845A902525A2AB2C0008B5E1 /* PinYinSort */,
 				845A902C25A2AB2C0008B5E1 /* OpenUDID */,
@@ -1332,13 +1389,125 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		845A920E25A2B9800008B5E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845A928825A318670008B5E1 /* Device */,
+				845A928A25A318670008B5E1 /* Mine */,
+				845A921725A2DD380008B5E1 /* EditPassword */,
+				845A920F25A2BB2D0008B5E1 /* Login */,
+				845A927825A30DC00008B5E1 /* AlertView */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		845A920F25A2BB2D0008B5E1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				845A921025A2BB540008B5E1 /* TGLoginViewController.h */,
+				845A921125A2BB540008B5E1 /* TGLoginViewController.m */,
+				845A921225A2BB540008B5E1 /* TGLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		845A921725A2DD380008B5E1 /* EditPassword */ = {
+			isa = PBXGroup;
+			children = (
+				845A921825A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.h */,
+				845A921925A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.m */,
+				845A921A25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.xib */,
+				845A922125A2E2190008B5E1 /* TGEditPasswordViewController.h */,
+				845A922225A2E2190008B5E1 /* TGEditPasswordViewController.m */,
+				845A922325A2E2190008B5E1 /* TGEditPasswordViewController.xib */,
+			);
+			path = EditPassword;
+			sourceTree = "<group>";
+		};
+		845A926525A2F8840008B5E1 /* DynamicNav */ = {
+			isa = PBXGroup;
+			children = (
+				845A926925A2F8840008B5E1 /* DynamicNavView.h */,
+				845A927025A2F8840008B5E1 /* DynamicNavView.m */,
+				845A926725A2F8840008B5E1 /* DynamicBigTitleView.h */,
+				845A926E25A2F8840008B5E1 /* DynamicBigTitleView.m */,
+				845A926D25A2F8840008B5E1 /* NormalNavView.h */,
+				845A926825A2F8840008B5E1 /* NormalNavView.m */,
+				845A926625A2F8840008B5E1 /* UIViewController+DynamicBar.h */,
+				845A926F25A2F8840008B5E1 /* UIViewController+DynamicBar.m */,
+				845A926A25A2F8840008B5E1 /* Optional */,
+			);
+			path = DynamicNav;
+			sourceTree = "<group>";
+		};
+		845A926A25A2F8840008B5E1 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				845A926B25A2F8840008B5E1 /* UIView+GoAdd.h */,
+				845A926C25A2F8840008B5E1 /* UIView+GoAdd.m */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		845A927825A30DC00008B5E1 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				845A927925A30E2C0008B5E1 /* TGResetAlertView.h */,
+				845A927A25A30E2C0008B5E1 /* TGResetAlertView.m */,
+				845A927D25A30E390008B5E1 /* TGResetAlertView.xib */,
+				845A928125A313E80008B5E1 /* TGContactServiceAlertView.h */,
+				845A928225A313E80008B5E1 /* TGContactServiceAlertView.m */,
+				845A928525A313F40008B5E1 /* TGContactServiceAlertView.xib */,
+			);
+			name = AlertView;
+			path = TGAIAWiFi/Models/AlertView;
+			sourceTree = SOURCE_ROOT;
+		};
+		845A928825A318670008B5E1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				845A928925A318670008B5E1 /* Controller */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		845A928925A318670008B5E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				845A928B25A318870008B5E1 /* TGDeviceManagerViewController.h */,
+				845A928C25A318870008B5E1 /* TGDeviceManagerViewController.m */,
+				845A928D25A318870008B5E1 /* TGDeviceManagerViewController.xib */,
+				845A929C25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.h */,
+				845A929A25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.m */,
+				845A929B25A3F5400008B5E1 /* TGDeviceEditPasswordViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		845A928A25A318670008B5E1 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				845A929225A318AA0008B5E1 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		845A929225A318AA0008B5E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				845A929325A318BB0008B5E1 /* TGVersionViewController.h */,
+				845A929425A318BB0008B5E1 /* TGVersionViewController.m */,
+				845A929525A318BB0008B5E1 /* TGVersionViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E8E985E2020CB7A30E0C49B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A77C08789F10E21DAE909A03 /* Pods-TGAIAWiFi.debug.xcconfig */,
 				3F2C5A3497459A58D66D536E /* Pods-TGAIAWiFi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1400,12 +1569,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845A927E25A30E390008B5E1 /* TGResetAlertView.xib in Resources */,
 				845A91BD25A2AB300008B5E1 /* BRPickerView.bundle in Resources */,
+				845A929E25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.xib in Resources */,
+				845A921C25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.xib in Resources */,
 				845A914F25A2AB2F0008B5E1 /* JSToOC.html in Resources */,
 				845A918825A2AB300008B5E1 /* YMPlayerCountDownView.xib in Resources */,
+				845A928625A313F40008B5E1 /* TGContactServiceAlertView.xib in Resources */,
+				845A929725A318BB0008B5E1 /* TGVersionViewController.xib in Resources */,
 				845A916E25A2AB300008B5E1 /* Calendar.bundle in Resources */,
 				845A919025A2AB300008B5E1 /* zan.png in Resources */,
+				845A921425A2BB540008B5E1 /* TGLoginViewController.xib in Resources */,
+				845A928F25A318870008B5E1 /* TGDeviceManagerViewController.xib in Resources */,
 				845A8F9225A2AA0B0008B5E1 /* LaunchScreen.storyboard in Resources */,
+				845A922525A2E2190008B5E1 /* TGEditPasswordViewController.xib in Resources */,
 				845A8F8F25A2AA0B0008B5E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1461,6 +1638,7 @@
 			files = (
 				845A917325A2AB300008B5E1 /* NSDate+KIAdditions.m in Sources */,
 				845A916325A2AB300008B5E1 /* PinyinHelper.m in Sources */,
+				845A921B25A2DD7D0008B5E1 /* TGEditPwdInputMobileViewController.m in Sources */,
 				845A915125A2AB2F0008B5E1 /* XLWebViewController.m in Sources */,
 				845A91B825A2AB300008B5E1 /* AESCipher.m in Sources */,
 				845A914325A2AB2F0008B5E1 /* PayManager.m in Sources */,
@@ -1468,6 +1646,7 @@
 				845A915725A2AB2F0008B5E1 /* BaseTableViewCell.m in Sources */,
 				845A917B25A2AB300008B5E1 /* NSString+PinYin.m in Sources */,
 				845A917025A2AB300008B5E1 /* LEEStarRating.m in Sources */,
+				845A927425A2F8840008B5E1 /* UIViewController+DynamicBar.m in Sources */,
 				845A917E25A2AB300008B5E1 /* UIWindow+CurrentViewController.m in Sources */,
 				845A917725A2AB300008B5E1 /* UILabel+labelExt.m in Sources */,
 				845A914C25A2AB2F0008B5E1 /* NSObject+Extension.m in Sources */,
@@ -1489,6 +1668,7 @@
 				845A919625A2AB300008B5E1 /* PPNetworkCache.m in Sources */,
 				845A916B25A2AB300008B5E1 /* MCalendarView.m in Sources */,
 				845A914625A2AB2F0008B5E1 /* UserInfo.m in Sources */,
+				845A927B25A30E2C0008B5E1 /* TGResetAlertView.m in Sources */,
 				845A919A25A2AB300008B5E1 /* YYFPSLabel.m in Sources */,
 				845A91C625A2AB300008B5E1 /* HoriMapTipView.m in Sources */,
 				845A91A625A2AB300008B5E1 /* YMBaseScrollView.m in Sources */,
@@ -1503,6 +1683,8 @@
 				845A918E25A2AB300008B5E1 /* AdPageView.m in Sources */,
 				845A91B725A2AB300008B5E1 /* XYTransition.m in Sources */,
 				845A91B225A2AB300008B5E1 /* SDCollectionViewCell.m in Sources */,
+				845A928E25A318870008B5E1 /* TGDeviceManagerViewController.m in Sources */,
+				845A927525A2F8840008B5E1 /* DynamicNavView.m in Sources */,
 				845A91AA25A2AB300008B5E1 /* YMIntroductoryPagesView.m in Sources */,
 				845A91B425A2AB300008B5E1 /* TAPageControl.m in Sources */,
 				845A916F25A2AB300008B5E1 /* ZZStarView.m in Sources */,
@@ -1518,6 +1700,7 @@
 				845A91D125A2AB300008B5E1 /* GHDropMenuFilterTimeChoseItem.m in Sources */,
 				845A91D225A2AB300008B5E1 /* GHDropMenuFilterTagItem.m in Sources */,
 				845A91B925A2AB300008B5E1 /* BRResultModel.m in Sources */,
+				845A921325A2BB540008B5E1 /* TGLoginViewController.m in Sources */,
 				845A91C925A2AB300008B5E1 /* NSString+Arc4random.m in Sources */,
 				845A914B25A2AB2F0008B5E1 /* BFCBaseViewModel.m in Sources */,
 				845A91AE25A2AB300008B5E1 /* TYCyclePagerTransformLayout.m in Sources */,
@@ -1529,6 +1712,7 @@
 				845A915225A2AB2F0008B5E1 /* RootWebViewController.m in Sources */,
 				845A91BE25A2AB300008B5E1 /* BRPickerStyle.m in Sources */,
 				845A917825A2AB300008B5E1 /* UIButton+btnExt.m in Sources */,
+				845A927225A2F8840008B5E1 /* UIView+GoAdd.m in Sources */,
 				845A91C125A2AB300008B5E1 /* BRAddressModel.m in Sources */,
 				845A91B025A2AB300008B5E1 /* SDCycleScrollView.m in Sources */,
 				845A918325A2AB300008B5E1 /* UIView+AZGradient.m in Sources */,
@@ -1568,8 +1752,10 @@
 				845A91C225A2AB300008B5E1 /* BRAddressPickerView.m in Sources */,
 				845A91B525A2AB300008B5E1 /* TAAnimatedDotView.m in Sources */,
 				845A91A925A2AB300008B5E1 /* YMBaseCollectionView.m in Sources */,
+				845A929625A318BB0008B5E1 /* TGVersionViewController.m in Sources */,
 				845A916C25A2AB300008B5E1 /* NSDate+Calendar.m in Sources */,
 				845A916D25A2AB300008B5E1 /* MCalendarShortView.m in Sources */,
+				845A927125A2F8840008B5E1 /* NormalNavView.m in Sources */,
 				845A914425A2AB2F0008B5E1 /* UserManager.m in Sources */,
 				845A917F25A2AB300008B5E1 /* NSString+Verity.m in Sources */,
 				845A918125A2AB300008B5E1 /* NSString+LikeStr.m in Sources */,
@@ -1592,11 +1778,14 @@
 				845A916225A2AB300008B5E1 /* DLSort.m in Sources */,
 				845A916025A2AB300008B5E1 /* STActionSheet.m in Sources */,
 				845A915925A2AB300008B5E1 /* RootViewController.m in Sources */,
+				845A929D25A3F5410008B5E1 /* TGDeviceEditPasswordViewController.m in Sources */,
 				845A919225A2AB300008B5E1 /* PPNetworkHelper.m in Sources */,
+				845A928325A313E80008B5E1 /* TGContactServiceAlertView.m in Sources */,
 				845A91CB25A2AB300008B5E1 /* UIView+Extension.m in Sources */,
 				845A91B125A2AB300008B5E1 /* UIView+SDExtension.m in Sources */,
 				845A914025A2AB2F0008B5E1 /* AppManager.m in Sources */,
 				845A916825A2AB300008B5E1 /* CalendarConfig.m in Sources */,
+				845A922425A2E2190008B5E1 /* TGEditPasswordViewController.m in Sources */,
 				845A91A725A2AB300008B5E1 /* YMBaseTableView.m in Sources */,
 				845A8F9525A2AA0B0008B5E1 /* main.m in Sources */,
 				845A919325A2AB300008B5E1 /* YMDeleteRequestHelper.m in Sources */,
@@ -1612,6 +1801,7 @@
 				845A916425A2AB300008B5E1 /* HanziToPinyin.m in Sources */,
 				845A91C325A2AB300008B5E1 /* HoriMapSearchListViewController.m in Sources */,
 				845A914D25A2AB2F0008B5E1 /* XLJSHandler.m in Sources */,
+				845A927325A2F8840008B5E1 /* DynamicBigTitleView.m in Sources */,
 				845A91D725A2AB300008B5E1 /* GHCustomAlertView.m in Sources */,
 				845A91C425A2AB300008B5E1 /* HoriMapViewController.m in Sources */,
 				845A918B25A2AB300008B5E1 /* TagsButton.m in Sources */,
@@ -1755,6 +1945,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TGAIAWiFi/TGAIA-prefix.pch";
 				INFOPLIST_FILE = TGAIAWiFi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1776,6 +1967,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TGAIAWiFi/TGAIA-prefix.pch";
 				INFOPLIST_FILE = TGAIAWiFi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

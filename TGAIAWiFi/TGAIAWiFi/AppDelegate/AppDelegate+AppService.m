@@ -15,6 +15,7 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import "MainTabBarController.h"
 #import "YMIntroductoryPagesHelper.h"
+#import "TGLoginViewController.h"
 
 
 
@@ -54,8 +55,10 @@
     if (@available(iOS 11.0, *)){
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
     }
-    self.mainTabBar = [MainTabBarController new];
-    self.window.rootViewController = self.mainTabBar;
+    TGLoginViewController *login = [[TGLoginViewController alloc] init];
+    RootNavigationController *nav = [[RootNavigationController alloc] initWithRootViewController:login];
+//    self.mainTabBar = [MainTabBarController new];
+    self.window.rootViewController = nav;
 }
 
 #pragma mark ————— 初始化网络配置 —————

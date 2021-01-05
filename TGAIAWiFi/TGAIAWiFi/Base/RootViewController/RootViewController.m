@@ -37,6 +37,7 @@
     //默认导航栏样式：黑字
     self.StatusBarStyle = UIStatusBarStyleDefault;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.isHidenNaviBar = YES;
     [self configUI];
     [self configViewModel];
 }

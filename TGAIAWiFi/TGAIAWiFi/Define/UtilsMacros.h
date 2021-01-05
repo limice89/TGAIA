@@ -43,6 +43,8 @@ typedef id   (^IDBlock_id)  (id data);
 
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight 44.0
+#define nav_normal_height 44
+#define nav_expand_height 62
 #define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 #define kTopHeight (kStatusBarHeight + kNavBarHeight)
 

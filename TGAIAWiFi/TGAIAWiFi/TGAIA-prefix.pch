@@ -100,6 +100,8 @@
 #import "TZImagePickerController.h"
 #import "CQToast.h"
 #import "JXTAlertController.h"
+#import "UIViewController+DynamicBar.h"
+#import "UIView+GoAdd.h"
 
 
 #import "Masonry.h"
@@ -172,6 +174,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define IECLocalized(key) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"]
 
 #define NSSTRING_CHECK_ISNULL(txt) (txt == nil || [txt isKindOfClass:[NSNull class]] || [((NSString *)txt) isEqualToString:@"(null)"] || [((NSString *)txt) isEqualToString:@"<null>"] || [((NSString *)txt) isEqualToString:@"<nil>"]) ? @"" : (NSString *)txt
+
+#define kSCreenScale  [UIScreen mainScreen].scale
+
 
 #define kSafeArea_Top (kDevice_Is_iPhoneX? 44: 20)
 #define kSafeArea_Bottom (kDevice_Is_iPhoneX? 34: 0)
